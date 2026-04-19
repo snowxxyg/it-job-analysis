@@ -3,6 +3,36 @@
 ### Job Market Intelligence Platform（Python × Flask × ETL × Data Engineering）
 
 ---
+## 📽️ デモ（Demo）
+
+### 🎬 システム動作イメージ
+
+以下は実際のダッシュボード操作のデモです：
+
+![demo](static/demo.gif)
+
+---
+
+### 🖼️ 補足スクリーンショット
+
+![salary](static/salary.png)
+![skills](static/skills.png)
+---
+
+### 💻 ローカル実行
+
+```bash
+git clone https://github.com/yourname/it-market-analysis.git
+cd job-market-analysis
+
+pip install -r requirements.txt
+python app.py
+```
+
+アクセス：
+[http://127.0.0.1:5000](http://127.0.0.1:5000)
+
+---
 
 ## 📌 概要（Overview）
 
@@ -24,6 +54,69 @@ Flaskダッシュボードとして提供します。
 - データドリブンな意思決定支援
 
 ---
+
+## 📊 分析レポート（Analysis Report）
+
+本プロジェクトでは、求人サイトから取得したデータを基に、  
+ITスキルごとの需要および給与水準の分析を行いました。
+
+---
+
+### 🔍 分析内容
+
+- キーワード別求人数の集計
+- スキル別需要（Python / SQL / Data分析 / 機械学習など）
+- 平均給与の算出
+- スキルごとの給与比較
+
+---
+
+### 📈 主な分析結果（Key Findings）
+
+#### 1. Pythonの需要が非常に高い
+- Python関連求人は他スキルと比較して求人数が多い
+- データ分析・機械学習領域で特に需要が集中
+
+---
+
+#### 2. Python + SQL の組み合わせが強い
+- Python単体よりもSQLを組み合わせた求人の方が多い
+- データエンジニア・データアナリスト職で高頻度
+
+---
+
+#### 3. 機械学習スキルは高給与傾向
+- Machine Learning / AI関連求人は平均給与が高い
+- ただし求人数はPython単体より少ない
+
+---
+
+#### 4. データ分析スキルは安定した需要
+- Data Analysis / BI系スキルは継続的に需要あり
+- 中〜高給与帯に分布
+
+---
+
+### 💡 考察（Insights）
+
+- Pythonは「基礎スキル」として広く使われている
+- SQLと組み合わせることで実務価値が上がる
+- 高収入を狙う場合、機械学習やAI領域への拡張が有効
+- データ分析分野は安定したキャリアパスとして有望
+
+---
+
+### 🎯 結論（Conclusion）
+
+本分析から、以下のスキル戦略が有効と考えられる：
+
+- Python + SQL → 実務対応力の強化
+- Python + Data Analysis → 安定した需要
+- Python + Machine Learning → 高収入領域
+
+👉 特に「Pythonを軸に複数スキルを組み合わせる」ことが、  
+市場価値向上において重要であると結論付けられる。
+
 
 ## 🧠 システムアーキテクチャ
 
@@ -247,36 +340,6 @@ job-market-analysis/
 
 ---
 
-## 📽️ デモ（Demo）
-
-### 🎬 システム動作イメージ
-
-以下は実際のダッシュボード操作のデモです：
-
-![demo](static/demo.gif)
-
----
-
-### 🖼️ 補足スクリーンショット
-
-![salary](static/salary.png)
-![skills](static/skills.png)
----
-
-### 💻 ローカル実行
-
-```bash
-git clone https://github.com/yourname/job-market-analysis.git
-cd job-market-analysis
-
-pip install -r requirements.txt
-python app.py
-```
-
-アクセス：
-[http://127.0.0.1:5000](http://127.0.0.1:5000)
-
----
 
 
 ## 💡 技術的なポイント
