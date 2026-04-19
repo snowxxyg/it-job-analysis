@@ -2,6 +2,14 @@
 # 🚀 求人市場分析プラットフォーム  
 ### Job Market Intelligence Platform（Python × Flask × ETL × Data Engineering）
 
+## 🔥 Highlights
+
+- 求人データを活用したエンドツーエンドのデータ分析基盤を構築
+- ETLパイプライン（取得→整形→保存→分析→可視化）を一貫実装
+- スキル需要と給与の関係を定量的に分析
+- Webダッシュボードとして可視化・即時確認が可能
+
+👉 データ取得から意思決定支援までを一気通貫で実現したプロジェクト
 ---
 ## 📽️ デモ（Demo）
 
@@ -22,7 +30,7 @@
 ### 💻 ローカル実行
 
 ```bash
-git clone https://github.com/yourname/it-market-analysis.git
+git clone https://github.com/snowxxyg/it-job-analysis.git
 cd job-market-analysis
 
 pip install -r requirements.txt
@@ -60,6 +68,15 @@ Flaskダッシュボードとして提供します。
 本プロジェクトでは、求人サイトから取得したデータを基に、  
 ITスキルごとの需要および給与水準の分析を行いました。
 
+## 🆚 本プロジェクトの特徴（Differentiation）
+
+一般的なスクレイピング・分析プロジェクトと異なり：
+
+- データ取得だけでなく、分析・可視化・UIまで統合
+- KPIベースでビジネス視点の分析を実施
+- Webダッシュボードとして即利用可能な形で提供
+
+👉 「分析して終わり」ではなく、「使える形まで落とし込む」ことを重視
 ---
 
 ### 🔍 分析内容
@@ -371,12 +388,8 @@ job-market-analysis/
 ---
 
 
-## 🧾 面接用一言
-
-求人データをスクレイピングし、SQLで管理、
-Pandasで分析、Matplotlibで可視化し、
-Flaskでダッシュボード化した
-ETL型データ分析システムを開発しました。
+## 求人データの収集から分析・可視化・ダッシュボード化までを一貫して実装し、  
+## スキル需要と給与の関係を定量的に分析できるシステムを構築しました。
 
 ---
 ## 作者
