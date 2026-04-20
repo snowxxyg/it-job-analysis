@@ -1,16 +1,10 @@
 import pandas as pd
-import pymysql
+import sqlite3  # 替换 pymysql
 from collections import Counter
 
-
 def get_db():
-    return pymysql.connect(
-        host="localhost",
-        user="root",
-        password="0811",
-        database="job_db",
-        charset="utf8mb4"
-    )
+    # 只要 jobs.db 文件在你的 GitHub 根目录，这样写就能连上
+    return sqlite3.connect("jobs.db")
 
 
 def format_salary(val):
