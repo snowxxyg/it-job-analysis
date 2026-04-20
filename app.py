@@ -1,16 +1,11 @@
 from flask import Flask, render_template, request
-<<<<<<< HEAD
-from analysis.analysis import (
+from analysis import (
     get_analysis,
     get_job_count,
     get_skill_analysis,
     get_kpi
 )
-from analysis.visualize import plot_jobs, plot_salary, plot_skills
-=======
-from analysis import get_analysis, get_job_count, get_skill_analysis, get_kpi
 from visualize import plot_jobs, plot_salary, plot_skills
->>>>>>> d4ab1f1b6b7ad2bbe1ba05efc1d77e079e7130a1
 from main import run_pipeline
 
 app = Flask(__name__)
