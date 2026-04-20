@@ -50,6 +50,8 @@ def update():
     run_pipeline()
     return "データ更新完了！"
 
-
 if __name__ == "__main__":
-    app.run(debug=True)
+    # 这里的 port 必须读取环境变量，Render 会自动分配
+    import os
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
