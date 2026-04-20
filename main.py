@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-from crawler.crawler import crawl_data
-from data.db import save_to_db
-
-from analysis.analysis import get_analysis, get_skill_analysis, get_job_count
-from analysis.visualize import plot_jobs, plot_salary, plot_skills
-from analysis.report import generate_report
-=======
 from analysis import get_analysis, get_skill_analysis, get_job_count
 from crawler import crawl_data
 from db import save_to_db
 from report import generate_report
 from visualize import plot_jobs, plot_salary, plot_skills
->>>>>>> d4ab1f1b6b7ad2bbe1ba05efc1d77e079e7130a1
 import os
 
 def run_pipeline():
