@@ -46,7 +46,8 @@ def update():
     return "データ更新完了！"
 
 if __name__ == "__main__":
-    # 这里的 port 必须读取环境变量，Render 会自动分配
     import os
-    port = int(os.environ.get("PORT", 5000))
+    # 这一行非常关键：读取 Render 定义的 PORT 变量，默认给 10000
+    port = int(os.environ.get("PORT", 10000))
+    # 必须监听 0.0.0.0 才能接收外部流量
     app.run(host='0.0.0.0', port=port)
