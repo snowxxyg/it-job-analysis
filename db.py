@@ -1,20 +1,28 @@
-import pymysql
+import sqlite3
 
 def save_to_db(data):
-    conn = pymysql.connect(
-        host="localhost",
-        user="root",
-        password="0811",
-        database="job_db"
-    )
+    # 连接到本地文件 jobs.db
+    conn = sqlite3.connect("jobs.db")
     cursor = conn.cursor()
 
+    # 1. 如果表不存在，先创建表（SQLite 需要手动确保表存在）
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS jobs (
+        title TEXT,
+        company TEXT,
+        salary_min INTEGER,
+        salary_max INTEGER,
+        location TEXT,
+        skills TEXT,
+        keyword TEXT,
+        PRIMARY KEY (title, company, keyword) 
+    )
+    """)
+
+    # 2. SQLite 的“存在即更新”语法是 INSERT OR REPLACE
     sql = """
-    INSERT INTO jobs (title, company, salary_min, salary_max, location, skills, keyword)
-    VALUES (%s, %s, %s, %s, %s, %s, %s)
-    ON DUPLICATE KEY UPDATE
-    salary_min=VALUES(salary_min),
-    salary_max=VALUES(salary_max)
+    INSERT OR REPLACE INTO jobs (title, company, salary_min, salary_max, location, skills, keyword)
+    VALUES (?, ?, ?, ?, ?, ?, ?)
     """
 
     for d in data:
