@@ -1,5 +1,5 @@
 
-# 🚀 求人市場分析プラットフォーム (IT Job Market Analysis)
+# 🚀 IT求人市場データ分析プラットフォーム (IT Job Market Analysis)
 ### Python × Flask × ETL × Cloud Deployment (Render)
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://it-job-analysis-5.onrender.com/)
